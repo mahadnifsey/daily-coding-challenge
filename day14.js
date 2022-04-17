@@ -11,4 +11,4 @@ function countSheeps(arrayOfSheep) {
 // Alternative Solution
 function countSheeps(arrayOfSheeps) {
     return arrayOfSheeps.filter(Boolean).length;
-  }
+ }
