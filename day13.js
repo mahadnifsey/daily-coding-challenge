@@ -13,4 +13,4 @@ function noSpace(x) {
 // Alternative Solutions
 function noSpace(x){
     return x.replace(/\s/g, '');
-  }
+}
