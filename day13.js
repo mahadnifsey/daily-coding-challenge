@@ -10,7 +10,7 @@ function noSpace(x) {
     return newStr
 }
 
-// Alternative Solutions
+// Alternative Solution below
 function noSpace(x){
     return x.replace(/\s/g, '');
 }
