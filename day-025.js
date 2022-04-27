@@ -6,3 +6,8 @@ function booleanToString(b){
       return "false";
     }
   }
+
+// Alternative Method
+function booleanToString(b){
+  return b.toString();
+}
