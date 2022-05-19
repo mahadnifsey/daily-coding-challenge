@@ -1,6 +1,7 @@
 // Convert a string to an array
-var stringToNumber = function(str){
-    // put your code here
-    return +str 
-   // ===  Number(str) || parseInt(str);
-}
+function stringToArray(string){
+    return string.split(' ');
+  }
+
+// Alternative Method
+const stringToArray = (s = '') => s.split(' ')
