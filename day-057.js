@@ -6,3 +6,6 @@ const countSheep = function(num) {
     }
     return result;
   };
+
+  // Alternative Method
+  countSheep=n=>[...Array(n).keys()].map(x=>`${x+1} sheep...`).join``
