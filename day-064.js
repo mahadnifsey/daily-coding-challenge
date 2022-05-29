@@ -12,7 +12,11 @@ function sumMix(x) {
     };
     return sum;
 };
-// Alternative Method
+
+// Alternative Method 1
 function sumMix(x){
     return x.reduce((x, y) => Number(x) + Number(y), 0);
-}
+};
+
+// Alternative Method 2
+const sumMix=x=>x.reduce((a,b)=>+b+a,0)
