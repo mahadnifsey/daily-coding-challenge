@@ -28,3 +28,5 @@ function sumArray(array)  {
 
 // Alternative Method 2
 const sumArray = $ => !$ ? 0 : $.sort((a, b)=> a - b).slice(1,-1).reduce((acc, el)=> acc + el, 0)
+
+// Alternative Method 
