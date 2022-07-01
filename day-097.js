@@ -6,4 +6,4 @@ function sayHello(name) {
 }
 
 // Alternative Method
-const sayHello = name => `Hello, ${name}`;
+const sayHello = name => `Hello, ${name}`;g
