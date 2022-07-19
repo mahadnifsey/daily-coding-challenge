@@ -3,7 +3,7 @@ var Ball = function(ballType) {
     this.ballType = ballType || 'regular';
   };
 
-// Alternative Method
+// Alternative Method 1
 var Ball = function(ballType = "regular") {
     this.ballType = ballType;
   };
