@@ -1,9 +1,8 @@
-// To be changed
-// Grasshopper - Debug sayHello
-// The starship Enterprise has run into some problem when creating a program to greet everyone as they come aboard. It is your job to fix the code and get the program working again!
-function sayHello(name) {
-    return `Hello, ${name}`
-}
+// Is it a palindrome?
+// Write a function that checks if a given string (case insensitive) is a palindrome.
+function isPalindrome(x) {
+    return x.toLowerCase() == x.toLowerCase().split('').reverse().join('')
+};
 
 // Alternative Method
-const sayHello = name => `Hello, ${name}`;g
+const isPalindrome = x => x.toLowerCase().split('').reverse().join('') == x.toLowerCase();
