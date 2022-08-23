@@ -11,3 +11,6 @@ function mouthSize(animal) {
 function mouthSize(animal) {
     return animal.toLowerCase() == 'alligator' ? 'small' : 'wide';
 };
+
+// Alternative Method 2
+const mouthSize = (animal) => animal.toLowerCase() == "alligator" ? "small" : "wide";
