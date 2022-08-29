@@ -4,3 +4,7 @@
 function unusualFive() {
     return ['one', 'two', 'three', 'four', 'five'].length;
 };
+
+// Alternative Method
+const unusualFive = () =>
+  Math.hypot(Math.ceil(Math.PI), Math.floor(Math.PI));
