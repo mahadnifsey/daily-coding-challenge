@@ -6,7 +6,6 @@ function remove(s){
     }
     return s;
 };
-
 // Alternative Method
 function remove (string) {
     return string.replace(/!+$/, '')
