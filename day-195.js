@@ -1,4 +1,9 @@
-/* Convert a Number to a String! */
-function numberToString(num) {
-    return num.toString();
+// Classic Hello World
+class Solution {
+  static main(){
+    console.log("Hello World!")
   }
+};
+
+// Alternative Method
+let Solution = { main(){ console.log("Hello World!");} };``
