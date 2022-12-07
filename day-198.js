@@ -1,15 +1,13 @@
-// Sum of Positive
-//You get an array of numbers, return the sum of all of the positives ones.
-function positiveSum(arr) {
-    var sum=0;
-    for(var i=0;i<arr.length;i++){
-    if(arr[i]>0)
-      sum+=arr[i]; 
-  }
-    return sum;
-  }
+// Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right
+function remove(s,n){
+  for (var i=0;i<n;i++) s=s.replace("!","");
+  return s;
+};
 
-  // Alternative Method
-  function positiveSum(arr) {
-    return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
- }
+// Alternative Method
+function remove(s,n){
+  return s.split('').filter(c => c != '!' || n-- <= 0).join('');
+};
+
+// Alternative Method 2
+remove =(s,n)=>n>0? remove(s.replace('!', ''), n-1):s
