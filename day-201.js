@@ -1,10 +1,13 @@
-// Remove First and Last Character.
-// Your goal is to create a function that removes the first and last characters of a string. 
-const removeChar = (str) => {
-    return str.slice(1, str.length - 1)
-  };
+// CSV representation of array
+// Create a function that returns the CSV representation of a two-dimensional numeric array.
+function toCsvText(array) {
+  return array.join('\n');
+};
 
-  // Alternative Solution
-function removeChar(str) {
-  return str.slice(1, -1);
-}
+// Alternative Method
+function toCsvText(array) {
+  return array.map(list => list.join(',')).join('\n')
+};
+
+// Alternative Method 2
+toCsvText = a => a.join("\n");
