@@ -1,22 +1,13 @@
-// Find the smallest integer in the array.
-// Given an array of integers your solution should find the smallest integer. 
-class SmallestIntegerFinder {
-    findSmallestInt(args) {
-    var temp  ;
-   
-      for (var i=0;i<args.length;i++){
-          if(args[i]<=args[0]){
-              args[0]  = args[i];    
-              temp = args[i];
-          }
-        }
-      return temp;
-    }
-  }
+// Training JS #6: Basic data types--Boolean and conditional statements if..else
+function trueOrFalse(val){
+  return Boolean(val).toString();
+};
 
-  // Alternative solution
-  class SmallestIntegerFinder {
-    findSmallestInt(args) {
-      return Math.min(...args)
-    }
-  }
+// Alternative Method
+function trueOrFalse(val){
+  if (val) return true;             
+  return false;
+};
+
+// Alternative Method 2
+trueOrFalse = val => val ? 'true' : 'false';
