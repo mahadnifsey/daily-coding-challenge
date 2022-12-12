@@ -1,12 +1,16 @@
-// Grasshopper - Summation.
-// Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
-var summation = function (num) {
-    let sum = 0
-    for(let i = 0; i <= num; i++) {
-        sum += i
-    }
-    return sum
-}
+// Compare within margin
+// Create a function close_compare that accepts 3 parameters: a, b, and an optional margin.
+// The function should return whether a is lower than, close to, or higher than b. 
+function closeCompare(a, b, m = 0){
+    return Math.abs(a - b) <= m? 0: Math.sign(a - b);
+};
 
-// Alternative solution
-const summation = n => n * (n + 1) / 2;
+// Alternative Method
+function closeCompare(a, b, margin = 0) {
+    if (a < b - margin) return -1;
+    if (a - margin > b) return 1;
+    return 0;
+};
+
+// Alternative Method 2
+closeCompare = (a, b, margin) => Math.abs(a-b) <= margin ? 0 : Math.sign(a - b);
