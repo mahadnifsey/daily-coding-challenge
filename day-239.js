@@ -8,6 +8,6 @@ var humanYearsCatYearsDogYears = function(y) {
     return [y, (y-2) * 4 + 24, (y-2) * 5 + 24]
 };
 
-// Alt Method
+// Alternative Method
 const humanYearsCatYearsDogYears = humanYears =>
   [humanYears, (--humanYears ? 20 : 15) + 4 * humanYears, (humanYears ? 19 : 15) + 5 * humanYears];
